@@ -37,6 +37,10 @@ main {
     padding: 4rem 8rem;
 }
 
+form {
+    font-size: 1.6rem;
+}
+
 form input {
     padding: .5rem 1rem;
     border: 2px solid #f1c40f;
@@ -59,4 +63,35 @@ form button {
 form button:hover {
     background-color: #f39c12;
     color: #fff;
+}
+
+.card {
+    width: 25%;
+    margin: 3rem 10rem 3rem 0;
+}
+
+.card-body, .card-body a {
+    font-size: 1.6rem;
+}
+
+.card-img-top {
+    height: 30rem;
+}
+
+.card-title {
+    margin: 2rem 0;
+    font-size: 2.2rem;
+}
+
+.card-text {
+    font-weight: 400;
+}
+
+.btn {
+    font-size: 1.6rem;
+}
+
+.product-box {
+    display: flex;
+    flex-wrap: wrap;
 }
