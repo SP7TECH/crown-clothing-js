@@ -1,5 +1,5 @@
-<%- include("partials/head.ejs") %>
-<%- include("partials/navigation.ejs") %>
+<%- include("../partials/head.ejs") %>
+<%- include("../partials/navigation.ejs") %>
     <main>
         <% if(prods.length > 0) { %>
             <div class="container">
@@ -8,11 +8,15 @@
                     <div class="product-box">
                         <% for(let products of prods) { %> 
                             <div class="card">
-                                <img src="https://images.unsplash.com/photo-1513001900722-370f803f498d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Product Image" class="card-img-top">
+                                <img src="<%= products.imageURL %> " alt="<%= products.title %> " class="card-img-top">
                                 <div class="card-body">
                                     <h2 class="card-text"><%= products.title %> </h2>
-                                    <a href="#" class="btn btn-primary">Go Somewhere</a>
+                                    <h3 class="mt-4">$ <%= products.price %> </h3>
+                                    <p class="card-description"><%= products.description %> </p>
                                 </div>
+                                <form action="/add-to-cart" method="POST" class="add-cart-form">
+                                    <button type="submit" class="btn btn-warning">Add to Cart</button>
+                                </form>
                             </div>
                         <% } %> 
                     </div>
@@ -22,4 +26,4 @@
             <h1>No Products Found!</h1>
         <% } %>
     </main>
-<%- include("partials/end.ejs") %> 
+<%- include("../partials/end.ejs") %> 

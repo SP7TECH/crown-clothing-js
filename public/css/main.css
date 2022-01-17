@@ -10,7 +10,7 @@ html {
 
 body {
     text-rendering: optimizeLegibility;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 nav {
@@ -20,6 +20,7 @@ nav {
 
 nav ul {
     list-style: none;
+    margin-bottom: 0;
 }
 
 nav ul li {
@@ -28,9 +29,13 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-right: 3rem;
     text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #000;
 }
 
 main {
@@ -41,13 +46,20 @@ form {
     font-size: 1.6rem;
 }
 
-form input {
+.form-group {
+    margin-top: 3rem;
+}
+
+form input, textarea {
     padding: .5rem 1rem;
     border: 2px solid #f1c40f;
+    width: 50%;
 }
 
 form input:active,
-form input:focus  {
+form input:focus,
+form textarea:active,
+form textarea:focus  {
     outline: none;
 }
 
@@ -75,7 +87,7 @@ form button:hover {
 }
 
 .card-img-top {
-    height: 30rem;
+    height: 28rem;
 }
 
 .card-title {
@@ -84,7 +96,12 @@ form button:hover {
 }
 
 .card-text {
-    font-weight: 400;
+    font-weight: 500;
+}
+
+.card-description {
+    font-size: 14px;
+    margin: 2rem 0 0;
 }
 
 .btn {
@@ -94,4 +111,17 @@ form button:hover {
 .product-box {
     display: flex;
     flex-wrap: wrap;
+}
+
+.add-cart-form {
+    display: flex;
+}
+
+.add-cart-form button {
+    margin: 0 0 1rem 1rem;
+}
+
+.edit-product {
+    margin: 0 0 1rem 1rem;
+    width: 20%;
 }

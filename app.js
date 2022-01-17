@@ -22,4 +22,6 @@ app.use(shopRoutes);
 
 app.use(errorController.errorPage);
 
-app.listen(3000);
+app.listen(3000, () => {
+    console.log("Server started");
+});

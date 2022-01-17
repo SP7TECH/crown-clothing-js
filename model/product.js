@@ -1,6 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 
+
+//path for file name - first param in readFile()
 const p = path.join(
     path.dirname(process.mainModule.filename),
     "data",
@@ -18,8 +20,11 @@ const getProductsFromFile = (cb) => {
 };
 
 module.exports = class Product {
-    constructor(t) {
-        this.title = t;
+    constructor(title, description, imageURL, price) {
+        this.title = title;
+        this.description = description;
+        this.imageURL = imageURL;
+        this.price = price;
     }
 
     save() {
