@@ -50,8 +50,9 @@ form {
     margin-top: 3rem;
 }
 
-form input, textarea {
-    padding: .5rem 1rem;
+form input,
+textarea {
+    padding: 0.5rem 1rem;
     border: 2px solid #f1c40f;
     width: 50%;
 }
@@ -59,17 +60,17 @@ form input, textarea {
 form input:active,
 form input:focus,
 form textarea:active,
-form textarea:focus  {
+form textarea:focus {
     outline: none;
 }
 
 form button {
     background-color: transparent;
     border: 2px solid #f39c12;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     margin-top: 2rem;
     cursor: pointer;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 form button:hover {
@@ -82,7 +83,8 @@ form button:hover {
     margin: 3rem 10rem 3rem 0;
 }
 
-.card-body, .card-body a {
+.card-body,
+.card-body a {
     font-size: 1.6rem;
 }
 
@@ -124,4 +126,10 @@ form button:hover {
 .edit-product {
     margin: 0 0 1rem 1rem;
     width: 20%;
+}
+
+.product-image {
+    height: 30rem;
+    width: auto;
+    margin: 5rem 0;
 }
